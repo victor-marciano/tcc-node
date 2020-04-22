@@ -1,7 +1,13 @@
 const User = require('../models/User');
 const argon2 = require('argon2');
+const { validationResult } = require('express-validator');
 
-exports.newUser = async (req, res) => { 
+exports.newUser = async (req, res) => {
+    const validationErrors = validationResult(req);
+    if (!validationErrors.isEmpty()) {
+        res.status(422).send({ errors: validationErrors.array() });
+    } 
+
     try {        
         const hashedPassword = await argon2.hash(req.body.password);
         await User.create({
@@ -37,6 +43,11 @@ exports.getOneUser = async (req, res) => {
 }
 
 exports.updateUser = async (req, res) => { 
+    const validationErrors = validationResult(req);
+    if (!validationErrors.isEmpty()) {
+        res.status(422).send({ errors: validationErrors.array() });
+    }
+    
     try {        
         const result = await User.updateOne(
             {_id: req.params.id},

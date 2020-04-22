@@ -1,12 +1,14 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/nutrimars', { useUnifiedTopology: true, useNewUrlParser: true });
 
 const userSchema = new mongoose.Schema({
     name: String,
     email: String,
-    password: String
+    password: String,
     // cellphone: String
-});
+    articles: {
+        type: mongoose.Schema.Types.ObjectId, ref: 'Article'
+    }
+}, { collection: 'users' });
 
 const User = mongoose.model('User', userSchema);
 

@@ -9,3 +9,10 @@ exports.newUserValidation = [
     check('name')
     .isLength({ min: 3 }).withMessage('Muito curto para ser um nome').bail(),
 ];
+
+exports.authValidation = [
+    check('password')
+    .exists().withMessage('A senha é obrigatória').bail(),    
+    check('email')
+    .exists().withMessage('O email é obrigatório')
+];

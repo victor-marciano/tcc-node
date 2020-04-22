@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "test",
-    "start": "node server.js"
+    "start": "nodemon server.js",
+    "seed": "node ./database/factory.js"
   },
   "author": "Victor Marciano",
   "license": "ISC",
@@ -18,5 +19,8 @@
     "express-validator": "^6.4.0",
     "mongoose": "^5.9.10",
     "newsapi": "^2.4.0"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0"
   }
 }

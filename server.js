@@ -9,11 +9,13 @@ mongoose.connect(connection, { useUnifiedTopology: true, useNewUrlParser: true }
 const bodyParser = require('body-parser');
 const articleRoute = require("./routes/articles");
 const userRoute = require("./routes/user");
+const foodRoute = require("./routes/food");
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 app.use(articleRoute);
 app.use(userRoute);
+app.use(foodRoute);
 app.use(cors());
 
 const port = process.env.PORT || '3000';

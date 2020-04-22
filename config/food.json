@@ -1,0 +1,119 @@
+{"name": "Arroz, integral, cozido", "kcal": 123.5348925, "carbs": 25.80975, "protein": 2.58825 , "fats": 1.00033333333333}
+{"name": "Arroz, tipo 1, cozido", "kcal": 128.258485666667, "carbs": 28.05985, "protein":2.52081666666667, "fats":0.227}
+{"name": "Aveia, flocos, crua", "kcal":393.822689449275,"carbs": 66.6356405797102, "protein": 13.9210260869565,"fats": 8.49666666666667}
+{"name": "Cereal matinal, milho","kcal":365.354163768116,"carbs":83.8242028985507, "protein": 7.15579710144928,"fats": 0.956666666666667}
+{"name": "Pão, glúten, forma","kcal":252.99403,"carbs":44.119, "protein": 11.9509996000926,"fats": 2.72666666666667}
+{"name": "Pão, milho, forma","kcal":292.01349,"carbs":56.397, "protein": 8.303,"fats": 3.11}
+{"name": "Pão, trigo, forma, integral","kcal":253.193618333333,"carbs":49.9415, "protein": 9.42516666666667,"fats": 3.65333333333333}
+{"name": "Alface, crespa, crua","kcal":10.6808565217392,"carbs":1.69550724637683, "protein": 1.34782608695652,"fats": 0.16}
+{"name": "Alface, lisa, crua","kcal":13.8209014492753,"carbs":2.42826086956522, "protein": 1.68840579710145,"fats": 0.123333333333333}
+{"name": "Batata, doce, cozida","kcal":76.7596105034352,"carbs":18.4223333333333, "protein": 0.641666666666667,"fats": 0.087666666666667}
+{"name": "Batata, inglesa, cozida","kcal":51.5884766362707,"carbs":11.94375, "protein": 1.16458333333333,"fats": 0}
+{"name": "Berinjela, cozida","kcal":18.8452855568131,"carbs":4.46825, "protein": 0.677083333333333,"fats": 0.148333333333333}
+{"name": "Beterraba, cozida","kcal":32.1543243314028,"carbs":7.23491666666666, "protein": 1.29375,"fats": 0.092666666666667}
+{"name": "Brócolis, cozido","kcal":24.6361631113688,"carbs":4.36666666666666, "protein": 2.13333333333333,"fats": 0.459}
+{"name": "Cenoura, cozida","kcal":29.8617777101596,"carbs":6.68674999999999, "protein": 0.847916666666667,"fats": 0.218333333333333}
+{"name": "Chuchu, cozido","kcal":18.539790531377,"carbs":4.79341666666667, "protein": 0.414583333333333,"fats": 0}
+{"name": "Coentro, folhas desidratadas","kcal":309.070746804476,"carbs":47.955, "protein": 20.875,"fats": 10.3866666666667}
+{"name": "Couve, manteiga, refogada","kcal":90.3448154261112,"carbs":8.70766666666667, "protein": 1.66666666666667,"fats": 6.594}
+{"name": "Couve-flor, cozida","kcal":19.1141406147282,"carbs":3.87541666666668, "protein": 1.23958333333333,"fats": 0.269333333333333}
+{"name": "Espinafre, Nova Zelândia, refogado","kcal":67.253651750664,"carbs":4.23858333333334, "protein": 2.71875,"fats": 5.43466666666667}
+{"name": "Fécula, de mandioca","kcal":330.850558333333,"carbs":81.1491666666667, "protein": 0.520833333333333,"fats": 0.283333333333333}
+{"name": "Mandioca, cozida","kcal":125.35825,"carbs":30.09, "protein": 0.575,"fats": 0.298333333333333}
+{"name": "Mandioca, frita","kcal":300.05524338915,"carbs":50.2514166666667, "protein": 1.38125,"fats": 11.195}
+{"name": "Nhoque, batata, cozido","kcal":180.775273993413,"carbs":36.78, "protein": 5.85833333333333,"fats": 1.94333333333333}
+{"name": "Repolho, roxo, refogado","kcal":41.7735252897143,"carbs":7.56158333333333, "protein": 1.80208333333333,"fats": 1.24033333333333}
+{"name": "Tomate, molho industrializado","kcal":38.4465494604906,"carbs":7.71166666666668, "protein": 1.375,"fats": 0.903333333333333}
+{"name": "Tomate, salada","kcal":20.5469091666666,"carbs":5.11791666666666, "protein": 0.810416666666667,"fats": 0}
+{"name": "Abacate, cru","kcal":96.1547086956522,"carbs":6.0308695652174, "protein": 1.23913043478261,"fats": 8.39666666666667}
+{"name": "Abacaxi, cru","kcal":48.3222130434782,"carbs":12.3346376811594, "protein": 0.858695652173913,"fats":0.123333333333333}
+{"name": "Açaí, polpa, com xarope de guaraná e glucose","kcal":110.29759,"carbs":21.4551666666667, "protein": 0.720833333333333,"fats": 3.66033333333333}
+{"name": "Açaí, polpa, congelada","kcal":58.0453688728213,"carbs":6.20841666666667, "protein": 0.797916666666667,"fats": 3.94433333333333}
+{"name": "Ameixa, calda, enlatada","kcal":182.84662,"carbs":46.8926666666667,"protein": 0.408333333333333,"fats": 0}
+{"name": "Banana, maçã, crua","kcal":86.8053304347826,"carbs":22.3363768115942,"protein": 1.7536231884058,"fats": 0.06}
+{"name": "Banana, nanica, crua","kcal":91.528847826087,"carbs":23.848115942029,"protein": 1.39855072463768,"fats": 0.116666666666667}
+{"name": "Banana, ouro, crua","kcal":112.366047826087,"carbs":29.3414492753623,"protein": 1.48188405797101,"fats": 0.21}
+{"name": "Banana, prata, crua","kcal":98.2497021739131,"carbs":25.956884057971,"protein": 1.26811594202899,"fats": 0.065}
+{"name": "Caju, cru","kcal":43.0650685217391,"carbs":10.2889888405797,"protein": 0.971014492753623,"fats": 0.33}
+{"name": "Cupuaçu, cru","kcal":49.4225587743719,"carbs":10.4335833333333,"protein": 1.16041666666667,"fats": 0.951333333333333}
+{"name": "Laranja, lima, suco","kcal":39.3360939441324,"carbs":9.16741666666668,"protein": 0.714583333333333,"fats": 0.119333333333333}
+{"name": "Laranja, pêra, suco","kcal":32.7097536231884,"carbs":7.55420289855072,"protein": 0.739130434782609,"fats": 0.073333333333333}
+{"name": "Maçã, Argentina, com casca, crua","kcal":62.5318183662891,"carbs":16.588,"protein": 0.225,"fats": 0.246}
+{"name": "Mamão, Papaia, cru","kcal":40.1567689422966,"carbs":10.43975,"protein": 0.45625,"fats": 0.124333333333333}
+{"name": "Maracujá, suco concentrado, envasado","kcal":41.96732,"carbs":9.63599999999999,"protein": 0.766666666666667,"fats": 0.193333333333333}
+{"name": "Morango, cru","kcal":30.1479173913044,"carbs":6.81840579710146,"protein": 0.894927536231884,"fats": 0.31}
+{"name": "Uva, suco concentrado, envasado","kcal":57.65536,"carbs":14.708,"protein": 0,"fats": 0}
+{"name": "Azeite, de dendê","kcal":884,"carbs":0,"protein": 0, "fats": 100}
+{"name": "Azeite, de oliva, extra virgem","kcal":884,"carbs":0,"protein": 0, "fats": 100}
+{"name": "Manteiga, sem sal","kcal":757.540460725997,"carbs":0,"protein": 0.395560007095337,"fats": 86.0393333333333}
+{"name": "Óleo, de girassol","kcal":884,"carbs":0,"protein": 0,"fats": 100}
+{"name": "Atum, fresco, cru","kcal":117.501,"carbs":0,"protein": 25.68,"fats": 0.87}
+{"name": "Bacalhau, salgado, refogado","kcal":139.66070105354,"carbs":1.22416666666668,"protein": 23.9791666666667,"fats": 3.60666666666667}
+{"name": "Cação, posta, com farinha de trigo, frita","kcal":208.332743725975,"carbs":3.10058333333333,"protein": 24.9520833333333,"fats": 9.95433333333333}
+{"name": "Cação, posta, cozida","kcal":"116.014480687658","carbs":0,"protein": 25.5895833333333,"fats": 0.748}
+{"name": "Pescada, branca, frita","kcal":223.039732369304,"carbs":0,"protein": 27.35625,"fats": 11.777}
+{"name": "Pescada, filé, com farinha de trigo, frito","kcal":283.425214431961,"carbs":5.03325000000001,"protein": 21.4354166666667,"fats": 19.115}
+{"name": "Pescada, filé, frito","kcal":154.270025,"carbs":0,"protein": 28.5875,"fats": 3.57}
+{"name": "Salmão, sem pele, fresco, grelhado","kcal":242.706569487095,"carbs":0,"protein": 26.1416666666667,"fats": 14.5323333333333}
+{"name": "Sardinha, assada","kcal":164.350788333333,"carbs":0,"protein": 32.1791666666667,"fats": 2.98733333333333}
+{"name": "Sardinha, frita","kcal":257.0407,"carbs":0,"protein": 33.3833333333333,"fats": 12.6933333333333}
+{"name": "Carne, bovina, acém, moído, cozido","kcal":212.4204,"carbs":0,"protein": 26.6866666666667,"fats": 10.9166666666667}
+{"name": "Carne, bovina, acém, sem gordura, cozido","kcal":214.610566666667,"carbs":0,"protein": 27.27,"fats": 10.8833333333333}
+{"name": "Carne, bovina, capa de contra-filé, sem gordura, grelhada","kcal":239.443633333333,"carbs":-0.006666666666675,"protein": 35.0633333333333,"fats": 9.95}
+{"name": "Carne, bovina, contra-filé, à milanesa","kcal":351.592659198999,"carbs":12.1745,"protein": 20.6125,"fats": 23.998}
+{"name": "Carne, bovina, contra-filé, sem gordura, grelhado","kcal":193.691566666667,"carbs":0,"protein": 35.8833333333333,"fats": 4.48666666666667}
+{"name": "Carne, bovina, coxão duro, sem gordura, cozido","kcal":216.616066666667,"carbs":0,"protein": 31.88,"fats": 8.92333333333333}
+{"name": "Carne, bovina, coxão mole, sem gordura, cozido","kcal":218.6751,"carbs":0,"protein": 32.3833333333333,"fats": 8.91333333333333}
+{"name": "Carne, bovina, filé mingnon, sem gordura, grelhado","kcal":219.7026,"carbs":0 ,"protein": 32.8,"fats": 8.83}
+{"name": "Carne, bovina, patinho, sem gordura, grelhado","kcal":219.259266666667,"carbs":0,"protein": 35.9,"fats": 7.31333333333333}
+{"name": "Frango, filé, à milanesa","kcal":220.87278,"carbs":7.51291666666666,"protein": 28.4604166666667,"fats": 7.79066666666667}
+{"name": "Frango, peito, com pele, assado","kcal":211.683149530729,"carbs":0,"protein": 33.4166666666667,"fats": 7.649}
+{"name": "Frango, peito, sem pele, cozido","kcal":162.874763346314,"carbs":0,"protein": 31.46875,"fats": 3.16}
+{"name": "Frango, peito, sem pele, grelhado","kcal":159.185007192612,"carbs":0,"protein": 32.0333333333333,"fats": 2.48366666666667}
+{"name": "Frango, sobrecoxa, com pele, assada","kcal":259.604769166667,"carbs":0,"protein": 28.7020833333333,"fats": 15.1936666666667}
+{"name": "Frango, sobrecoxa, sem pele, assada","kcal":232.883396666667,"carbs":0,"protein": 29.175,"fats": 12.0073333333333}
+{"name": "Hambúrguer, bovino, frito","kcal":258.283,"carbs":6.32008333333333,"protein": 19.9729166666667,"fats": 17.0123333333333}
+{"name": "Hambúrguer, bovino, grelhado","kcal":209.831666666667,"carbs":11.3334166666667,"protein": 13.15625,"fats": 12.4303333333333}
+{"name": "Porco, bisteca, frita","kcal":311.169045334856,"carbs":0,"protein": 33.7479166666667,"fats": 18.5216666666667}
+{"name": "Porco, bisteca, grelhada","kcal":280.084034902771,"carbs":0,"protein": 28.8895833333333,"fats": 17.3753333333333}
+{"name": "Porco, lombo, assado","kcal":210.234665579637,"carbs":0,"protein": 35.725,"fats": 6.39566666666667}
+{"name": "Porco, pernil, assado","kcal":262.259606666667,"carbs":0,"protein": 32.1333333333333,"fats": 13.8636666666667}
+{"name": "Iogurte, natural","kcal":51.4895333333333,"carbs":1.91666666666666,"protein": 4.06333333333333,"fats": 3.04}
+{"name": "Iogurte, natural, desnatado","kcal":41.4927112815583,"carbs":5.77395333333333,"protein": 3.83438006877899,"fats": 0.315666666666667}
+{"name": "Iogurte, sabor morango","kcal":69.5656,"carbs":9.69333333333334,"protein": 2.71,"fats": 2.33}
+{"name": "Iogurte, sabor pêssego","kcal":67.8494,"carbs":9.43333333333334,"protein": 2.53,"fats": 2.33666666666667}
+{"name": "Leite, de vaca, achocolatado","kcal":82.8209962719936,"carbs":14.1583133333333,"protein": 2.09902003765106,"fats": 2.169}
+{"name": "Leite, de vaca, desnatado, pó","kcal":361.608,"carbs":53.0433333333333,"protein": 34.69,"fats": 0.933333333333333}
+{"name": "Leite, de vaca, integral","kcal":0,"carbs":0,"protein": 0,"fats": 0}
+{"name": "Leite, de vaca, integral, pó","kcal":496.6503,"carbs":39.18,"protein":25.42,"fats": 26.9033333333333}
+{"name": "Queijo, mozarela","kcal":329.870718420887,"carbs":3.04933292706807,"protein": 22.6490004062653,"fats": 25.183}
+{"name": "Queijo, parmesão","kcal":452.963755333333,"carbs":1.66072,"protein": 35.5536133333333,"fats": 33.5293333333333}
+{"name": "Queijo, prato","kcal":359.880462405055,"carbs":1.87857292683919,"protein": 22.6617604064941,"fats": 29.1063333333333}
+{"name": "Bebida isotônica, sabores variados","kcal":25.6133333333333,"carbs":6.40333333333334,"protein": 0,"fats": 0}
+{"name": "Omelete, de queijo","kcal":268.006772182425,"carbs":0.437166666666668,"protein": 15.5708333333333,"fats": 22.0076666666667}
+{"name": "Ovo, de galinha, clara, cozida/10minutos","kcal":59.4356966666667,"carbs":0,"protein": 13.4479166666667,"fats": 0.089}
+{"name": "Ovo, de galinha, gema, cozida/10minutos","kcal":352.67334,"carbs":1.56000000000001,"protein": 15.9,"fats": 30.777}
+{"name": "Ovo, de galinha, inteiro, cozido/10minutos","kcal":145.70017,"carbs":0.614916666666674,"protein": 13.29375,"fats": 9.47633333333333}
+{"name": "Ovo, de galinha, inteiro, frito","kcal":240.187224009117,"carbs":1.19366666666666,"protein": 15.6166666666667,"fats": 18.5926666666667}
+{"name": "Chocolate, meio amargo","kcal":474.917769973274,"carbs":62.4228899011612,"protein": 4.86244343217214,"fats": 29.8566666666667}
+{"name": "Mel, de abelha","kcal":309.242666666667,"carbs":84.0333333333333,"protein": 0,"fats": 0}
+{"name": "Gelatina, sabores variados, pó","kcal":380.2229,"carbs":89.2233333333333,"protein": 8.88666666666667,"fats": 0}
+{"name": "Arroz carreteiro","kcal":153.772,"carbs":11.5848333333333,"protein": 10.8291666666667,"fats": 7.124}
+{"name": "Baião de dois, arroz e feijão-de-corda","kcal":135.681333333333,"carbs":20.41775,"protein": 6.23958333333333,"fats": 3.228}
+{"name": "Estrogonofe de carne","kcal":173.141364318013,"carbs":2.97541666666667,"protein": 15.03125,"fats": 10.803}
+{"name": "Estrogonofe de frango","kcal":156.806103013237,"carbs":2.59391666666666,"protein": 17.5520833333333,"fats": 7.96233333333333}
+{"name": "Feijão tropeiro mineiro","kcal":151.561856830955,"carbs":19.5818333333333,"protein": 10.1708333333333,"fats": 6.79066666666667}
+{"name": "Feijoada","kcal":"116.933457311034","carbs": 11.6418333333333,"protein":8.67083333333333,"fats": 6.47733333333333}
+{"name": "Macarrão, molho bolognesa","kcal":119.53177144556,"carbs":22.5223668317795,"protein": 4.93429983488719,"fats": 0.889666666666667}
+{"name": "Amendoim, grão, cru","kcal":544.052655799433,"carbs":20.3135333333333,"protein": 27.1908001899719,"fats": 43.85}
+{"name": "Amendoim, torrado, salgado","kcal":605.781092917019,"carbs":18.702486509641,"protein": 22.4751801570257,"fats": 53.9633333333333}
+{"name": "Ervilha, enlatada, drenada","kcal":73.8447043478261,"carbs":13.4421739130435,"protein": 4.59782608695652,"fats": 0.38}
+{"name": "Feijão, carioca, cozido","kcal":76.4240856666667,"carbs":13.5910333333333,"protein": 4.775,"fats": 0.542333333333333}
+{"name": "Feijão, fradinho, cozido","kcal":78.0088966666667,"carbs":13.4995833333333,"protein": 5.09375,"fats": 0.644}
+{"name": "Feijão, preto, cozido","kcal":77.0272666666667,"carbs":14.0051666666667,"protein": 4.47916666666667,"fats": 0.535666666666667}
+{"name": "Lentilha, cozida","kcal":92.6387662522992,"carbs":16.30225,"protein": 6.31041666666667,"fats": 0.524666666666667}
+{"name": "Amêndoa, torrada, salgada","kcal":580.746954556071,"carbs":29.54724,"protein": 18.5547593851089,"fats": 47.3243333333333}
+{"name": "Castanha-de-caju, torrada, salgada","kcal":570.167626501619,"carbs":29.134966000557,"protein": 18.5093673327764,"fats": 46.2796666666667}
+{"name": "Castanha-do-Brasil, crua","kcal":642.963071681069,"carbs":15.07865989844,"protein": 14.53634010156,"fats": 63.459}
+{"name": "Linhaça, semente","kcal":495.096113843651,"carbs":43.3121994931539,"protein": 14.0838671735128,"fats": 32.2529333333333}
+{"name": "Noz, crua","kcal":620.060019790567,"carbs":18.3638661638896,"protein": 13.9708005027771,"fats": 59.3596666666667}

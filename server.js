@@ -2,13 +2,17 @@ const express = require('express');
 const app = express();
 require('dotenv').config({ debug: process.env.DEBUG });
 const cors = require('cors');
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/nutrimars', { useUnifiedTopology: true, useNewUrlParser: true });
 
 const bodyParser = require('body-parser');
 const articleRoute = require("./routes/articles");
+const userRoute = require("./routes/user");
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 app.use(articleRoute);
+app.use(userRoute);
 app.use(cors());
 
 const port = process.env.PORT || '3000';

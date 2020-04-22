@@ -5,6 +5,7 @@ exports.getPublicArticles = async (req, res) => {
     try {
         const response = await newsapi.v2.everything({q: 'fitness', language: 'pt', sortBy: 'relevancy', page: 1});
         let articles = response.articles;
+        res.setHeader('Access-Control-Allow-Origin', '*');
         res.send(articles);    
     } catch (error) {
         res.send(error);

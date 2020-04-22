@@ -22,3 +22,18 @@ exports.getSystemArticles = async (req, res) => {
         res.send(error);
     }
 };
+
+exports.newArticle = async (req, res) => {
+    try {
+        await Article.create({
+            title: req.body.title,
+            description: req.body.description,
+            content: req.body.content,
+            urlToImage: req.body.imageUrl
+        });        
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.send({success: true, message: "Artigo inserido com sucesso!"});    
+    } catch (error) {
+        res.send(error);
+    }
+};

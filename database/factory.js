@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/nutrimars', {
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/nutrimars', {
      useUnifiedTopology: true,
      useNewUrlParser: true 
 });

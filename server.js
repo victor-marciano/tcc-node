@@ -4,7 +4,13 @@ require('dotenv').config({ debug: process.env.DEBUG });
 const cors = require('cors');
 const mongoose = require('mongoose');
 const connection = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/nutrimars';
-mongoose.connect(connection, { useUnifiedTopology: true, useNewUrlParser: true });
+mongoose.connect(connection, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true 
+}).then(() => console.log('Conectado ao MongoDB!'))
+.catch(err => {
+    console.log(Error, err.message);
+});;
 
 const bodyParser = require('body-parser');
 const articleRoute = require("./routes/articles");

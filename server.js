@@ -4,8 +4,7 @@ require('dotenv').config({ debug: process.env.DEBUG });
 const cors = require('cors');
 const mongoose = require('mongoose');
 const connection = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/nutrimars';
-mongoose.connect(connection, {
-    useUnifiedTopology: true,
+mongoose.connect(connection, {    
     useNewUrlParser: true 
 }).then(() => console.log('Conectado ao MongoDB!'))
 .catch(err => {

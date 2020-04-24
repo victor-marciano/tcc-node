@@ -1,11 +1,12 @@
 const User = require('../models/User');
 const argon2 = require('argon2');
 const { validationResult } = require('express-validator');
+const jwt = require('jsonwebtoken');
 
 exports.newUser = async (req, res) => {
     const validationErrors = validationResult(req);
     if (!validationErrors.isEmpty()) {
-        res.status(422).send({ errors: validationErrors.array() });
+        return res.status(422).send({ errors: validationErrors.array() });
     } 
 
     try {        
@@ -15,18 +16,43 @@ exports.newUser = async (req, res) => {
             email: req.body.email,
             password: hashedPassword       
         });        
-        res.send({success: true, message: "Usuário cadastrado com sucesso!"});        
+        return res.send({success: true, message: "Usuário cadastrado com sucesso!"});        
     } catch (error) {
-        res.send({success: false, message: "Erro ao cadastrar usuário!", error: error});    
+        return res.send({success: false, message: "Erro ao cadastrar usuário!", error: error});    
+    }   
+}
+
+exports.authUser = async (req, res) => {
+    const validationErrors = validationResult(req);
+    if (!validationErrors.isEmpty()) {
+        return res.status(422).send({ errors: validationErrors.array() });
+    } 
+
+    try {        
+        const user = await User.findOne({ email: req.body.email }).select('+password');
+
+        if (!user) {
+            return res.status(400).send({ message: "Nenhum usuário com este email foi encontrado" });
+        }
+
+        if (!await argon2.verify(user.password, req.body.password)) {
+            return res.status(401).send({ message: "Senha incorreta!" });
+        } 
+
+        user.set('password', undefined, { strict: false });
+        const accessToken = jwt.sign(user.toJSON(), process.env.JWT_SECRET);
+        return res.json({ accessToken: accessToken, message: "Autenticado com sucesso!", user: user });    
+    } catch (error) {
+        return res.send({ success: false, message: "Erro ao cadastrar usuário!", error: error.message });    
     }   
 }
 
 exports.getUsers = async (req, res) => { 
     try {        
         const users = await User.find();
-        res.send({success: true, users: users});        
+        return res.send({success: true, users: users});        
     } catch (error) {
-        res.send({success: false, message: "Erro ao cadastrar usuário!", error: error});    
+        return res.send({success: false, message: "Erro ao cadastrar usuário!", error: error});    
     }   
 }
 
@@ -36,16 +62,16 @@ exports.getOneUser = async (req, res) => {
         if (!user) {
             throw new Error("Nenhum usuário com este id foi encontrado!");
         }
-        res.send({success: true, user: user});        
+        return res.send({success: true, user: user});        
     } catch (error) {
-        res.send({success: false, message: error.message});    
+        return res.send({success: false, message: error.message});    
     }   
 }
 
 exports.updateUser = async (req, res) => { 
     const validationErrors = validationResult(req);
     if (!validationErrors.isEmpty()) {
-        res.status(422).send({ errors: validationErrors.array() });
+        return res.status(422).send({ errors: validationErrors.array() });
     }
     
     try {        
@@ -65,9 +91,9 @@ exports.updateUser = async (req, res) => {
         if (result.nModified === 0) {
             throw new Error("Erro ao atualizar!");
         }
-        res.send({success: true, message: "Usuário atualizado com sucesso!"});        
+        return res.send({success: true, message: "Usuário atualizado com sucesso!"});        
     } catch (error) {
-        res.send({success: false, message: error.message});    
+        return res.send({success: false, message: error.message});    
     }   
 }
 
@@ -77,8 +103,8 @@ exports.removeUser = async (req, res) => {
         if (result.deletedCount === 0) {
             throw new Error("Erro ao remover usuário!");
         }
-        res.send({success: true, message: "Usuário removido com sucesso!"});        
+        return res.send({success: true, message: "Usuário removido com sucesso!"});        
     } catch (error) {
-        res.send({success: false, message: error.message});    
+        return res.send({success: false, message: error.message});    
     }   
 }

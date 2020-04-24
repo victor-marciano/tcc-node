@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-require('dotenv').config({ debug: process.env.DEBUG });
+require('dotenv').config();
 const cors = require('cors');
 const mongoose = require('mongoose');
 const connection = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/nutrimars';
@@ -10,6 +10,8 @@ mongoose.connect(connection, {
 .catch(err => {
     console.log(Error, err.message);
 });;
+
+app.use(cors());
 
 const bodyParser = require('body-parser');
 const articleRoute = require("./routes/articles");
@@ -21,7 +23,7 @@ app.use(bodyParser.json());
 app.use(articleRoute);
 app.use(userRoute);
 app.use(foodRoute);
-app.use(cors());
+
 
 const port = process.env.PORT || '3000';
 

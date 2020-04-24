@@ -11,6 +11,8 @@ mongoose.connect(connection, {
     console.log(Error, err.message);
 });;
 
+app.use(cors());
+
 const bodyParser = require('body-parser');
 const articleRoute = require("./routes/articles");
 const userRoute = require("./routes/user");
@@ -21,7 +23,7 @@ app.use(bodyParser.json());
 app.use(articleRoute);
 app.use(userRoute);
 app.use(foodRoute);
-app.use(cors());
+
 
 const port = process.env.PORT || '3000';
 

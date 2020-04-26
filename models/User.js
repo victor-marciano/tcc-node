@@ -33,11 +33,19 @@ const userSchema = new mongoose.Schema({
         required: false
     }, 
 
-    articles: [{
-        type: mongoose.Schema.Types.ObjectId, ref: 'Article'
-    }],
+    articles: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Article'
+        }
+    ],
 
-    diet: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Diet'}]
+    diet: [
+        { 
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Diet'
+        }
+    ]
 
 }, { collection: 'users' });
 

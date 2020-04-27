@@ -112,3 +112,15 @@ exports.removeUser = async (req, res) => {
         return res.send({success: false, message: error.message});    
     }   
 }
+
+exports.getOneUserWithAllData = async (req, res) => { 
+    try {        
+        const user = await User.findOne({_id: req.params.id}).populate('diet');
+        if (!user) {
+            throw new Error("Nenhum usuário com este id foi encontrado!");
+        }
+        return res.send({success: true, user: user});        
+    } catch (error) {
+        return res.send({success: false, message: error.message});    
+    }   
+}

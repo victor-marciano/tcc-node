@@ -1,5 +1,6 @@
 const moment = require('moment');
 const Diet = require('../models/Diet');
+const User = require('../models/User');
 moment.locale('pt-Br');
 
 exports.getDiet = async (req, res) => {
@@ -16,12 +17,23 @@ exports.newDiet = async (req, res) => {
         const startDiet = moment().toISOString();
         const endDiet = moment().add(1, 'm').toISOString();
 
-        await Diet.create({
+        const diet =  await Diet.create({
             name: req.body.name,
             start: startDiet,
             end: endDiet,
             user: req.body.user_id
-        });    
+        });      
+        
+        await User.findByIdAndUpdate(
+            req.body.user_id,
+            {
+              $push: {
+                diet: diet._id 
+              }
+            },
+            { new: true, useFindAndModify: false }
+        );
+       
         res.send({success: true, message: "Dieta criada com sucesso"});    
     } catch (error) {
         res.send({error: error.message, message: "Não foi possível inserir sua dieta, tente novamente mais tarde"});

@@ -2,7 +2,6 @@ const moment = require('moment');
 const Diet = require('../models/Diet');
 const User = require('../models/User');
 const Meal = require('../models/Meal');
-const faker = require('faker/locale/pt_BR');
 moment.locale('pt-Br');
 
 exports.getDiet = async (req, res) => {
@@ -47,7 +46,7 @@ exports.systemNewDiet = async (req, res) => {
 
     try {
         const diet = await Diet.create({
-            name: `Dieta ${faker.random.uuid()}`, start: startDiet, end: endDiet, user: req.params.user_id 
+            name: `Dieta gerada pelo Sistema`, start: startDiet, end: endDiet, user: req.params.user_id 
         });       
                    
         // const meals = await Meal.mountMeal(req.body.meal, diet._id);

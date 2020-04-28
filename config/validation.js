@@ -23,3 +23,13 @@ exports.authValidation = [
     check('email')
     .exists().withMessage('O email é obrigatório')
 ];
+
+exports.newDietValidation = [
+    check('name').exists().withMessage("O nome da dieta é obrigatório"),
+    check('start')
+    .exists().withMessage("É necessário uma data de início para dieta").bail()
+    .isDataURI().withMessage("É necessário ser uma data válida"),
+    check('end')
+    .exists().withMessage("É necessário uma data de término para dieta").bail()
+    .isDataURI().withMessage("É necessário ser uma data válida")
+]

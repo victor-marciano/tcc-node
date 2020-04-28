@@ -20,6 +20,14 @@ const dietSchema = new mongoose.Schema({
     ]
 }, { collection: 'diet' });
 
+dietSchema.statics.addMealsToDiet = async (diet_id, meals) => {
+    let diet = await mongoose.model('Diet').findOne(diet_id);
+    for (const meal in meals) {
+        diet.meal.push(meals[meal]._id);
+    }
+    return await diet.save(); 
+}
+
 const diet = mongoose.model('Diet', dietSchema);
 
 module.exports = diet;

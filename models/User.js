@@ -49,6 +49,14 @@ const userSchema = new mongoose.Schema({
 
 }, { collection: 'users' });
 
+userSchema.statics.addDietToUser = (user_id, diet_id) => {
+    return mongoose.model('User').findByIdAndUpdate(user_id, {
+        $push: {
+          diet: diet_id 
+        }
+    }, { new: true, useFindAndModify: false });
+}
+
 const User = mongoose.model('User', userSchema);
 
 module.exports = User;

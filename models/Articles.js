@@ -4,7 +4,8 @@ const articleSchema = new mongoose.Schema({
     title: String,
     description: String,
     content: String,
-    urlToImage: String
+    urlToImage: String,
+    url: String
 }, { collection: 'articles' });
 
 const article = mongoose.model('Article', articleSchema);

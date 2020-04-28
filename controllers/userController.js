@@ -2,6 +2,8 @@ const User = require('../models/User');
 const argon2 = require('argon2');
 const { validationResult } = require('express-validator');
 const jwt = require('jsonwebtoken');
+const moment = require('moment');
+moment.locale('pt_Br');
 
 exports.newUser = async (req, res) => {
     const validationErrors = validationResult(req);
@@ -14,7 +16,8 @@ exports.newUser = async (req, res) => {
         await User.create({
             name: req.body.name,
             email: req.body.email,
-            password: hashedPassword       
+            password: hashedPassword,
+            created: moment().toISOString()                   
         });        
         return res.send({success: true, message: "Usuário cadastrado com sucesso!"});        
     } catch (error) {
@@ -41,6 +44,7 @@ exports.authUser = async (req, res) => {
 
         user.set('password', undefined, { strict: false });
         const accessToken = jwt.sign(user.toJSON(), process.env.JWT_SECRET);
+        await user.updateOne({ lastLogin: moment().toISOString() });
         return res.json({ accessToken: accessToken, message: "Autenticado com sucesso!", user: user });    
     } catch (error) {
         return res.send({ success: false, message: "Erro ao cadastrar usuário!", error: error.message });    
@@ -104,6 +108,18 @@ exports.removeUser = async (req, res) => {
             throw new Error("Erro ao remover usuário!");
         }
         return res.send({success: true, message: "Usuário removido com sucesso!"});        
+    } catch (error) {
+        return res.send({success: false, message: error.message});    
+    }   
+}
+
+exports.getOneUserWithAllData = async (req, res) => { 
+    try {        
+        const user = await User.findOne({_id: req.params.id}).populate('diet');
+        if (!user) {
+            throw new Error("Nenhum usuário com este id foi encontrado!");
+        }
+        return res.send({success: true, user: user});        
     } catch (error) {
         return res.send({success: false, message: error.message});    
     }   

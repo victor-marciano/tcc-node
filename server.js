@@ -17,12 +17,14 @@ const bodyParser = require('body-parser');
 const articleRoute = require("./routes/articles");
 const userRoute = require("./routes/user");
 const foodRoute = require("./routes/food");
+const dietRoute = require("./routes/diet");
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 app.use(articleRoute);
 app.use(userRoute);
 app.use(foodRoute);
+app.use(dietRoute);
 
 
 const port = process.env.PORT || '3000';
